@@ -71,19 +71,4 @@ public class DoubleDimension {
          System.out.println("Invalid index to delete");
       }
    }
-
-   public static void main(String[] args) {
-      DoubleDimension doubleDimension = new DoubleDimension(3, 3);
-      doubleDimension.insert(0,0,3);     // cell (1, 1)
-      doubleDimension.insert(0,1,10);    // cell (1, 2)
-      doubleDimension.insert(0,2,7);     // cell (1, 3)
-      doubleDimension.insert(1,0,13);    // cell (2, 1)
-      doubleDimension.insert(1,2,9);     // cell (2, 3)
-      doubleDimension.insert(2,1,4);     // cell (3, 2)
-
-      doubleDimension.traverse();
-      doubleDimension.searchArray(7);
-      doubleDimension.deleteValueAtIndex(2, 1);
-      doubleDimension.traverse();
-   }
 }
